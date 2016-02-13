@@ -1,0 +1,13 @@
+<% if(theme.author.github) { %>
+	<p class="asidetitle"><%= __('github-card') %></p>
+	<div class="github-card">
+	<div class="github-card user-card">
+		<div class="header User"></div>
+		<a class="avatar" href="https://github.com/qinyuanpei" target="_top"><img src="/assets/images/author.jpg" alt="qinyuanpei"></a>
+		<div class="content"><h1><%= config.author %></h1>
+		<ul class="status">
+		  <li><a href="../archives" target="_top"><strong><%= site.posts.length %></strong><%= __('posts') %></a></li>
+		  <li><a href="../categories" target="_top"><strong><%= site.categories.length %></strong><%= __('categories') %></a></li>
+		  <li><a href="../tags" target="_top"><strong><%= site.tags.length %></strong><%= __('tags') %></a></li></ul></div></div>
+	  </div>
+<% } %>
